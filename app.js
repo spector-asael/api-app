@@ -1,6 +1,6 @@
 const apiKey = "pwvp8t1Yt7r6BL14k56LLw==a3w85m1RDIdniGj9";
 const quoteApiUrl = "https://api.api-ninjas.com/v1/quotes";
-const unsplashApiUrl = "https://api.unsplash.com/photos/random?client_id=YOUR_ACCESS_KEY"; // Replace with your Unsplash Access Key
+const unsplashApiUrl = "https://api.unsplash.com/photos/random";
 
 // Function to fetch quote
 const getQuote = () => {
@@ -44,9 +44,5 @@ const regenerateContent = () => {
   getQuote();
   getImage();
 };
-
-getQuote();
-getImage();
-
 // Add event listener to the "Regenerate" button
 document.getElementById("button").addEventListener("click", regenerateContent);
